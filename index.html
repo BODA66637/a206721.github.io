@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Portfolio - FENG BODA</title>
+    <style>
+        :root { --primary-color: #2e7d32; --bg-color: #f4f7f6; --text-color: #333; --card-bg: #fff; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+        nav { position: sticky; top: 0; background: var(--primary-color); color: white; padding: 1rem 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.2); }
+        nav ul { list-style: none; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+        nav a { color: white; text-decoration: none; font-weight: bold; padding: 5px 10px; border-radius: 5px; }
+        nav a:hover { background: rgba(255,255,255,0.2); }
+        section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+        h1, h2, h3 { color: var(--primary-color); margin-bottom: 20px; }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+        .card { background: var(--card-bg); padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 10px; }
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin-bottom: 15px; border-radius: 8px; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+        footer { background: #222; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#labs">Labs</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#reflection">Reflection</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1>Mobile Programming e-Portfolio</h1>
+        <p><strong>Name:</strong> FENG BODA</p>
+        <p><strong>Matric No:</strong> A206721</p>
+        <p><strong>Programme:</strong> Mobile Application Programming</p>
+        <p><strong>Instructor:</strong> Cikgu Izwan</p>
+        <br>
+        <h3>SDG Goal</h3>
+        <p><strong>SDG 3: Good Health and Well-being</strong></p>
+        <p>This project supports SDG 3 by providing a digital healthcare registration system that simplifies appointment booking, improves accessibility to healthcare services, and enhances the overall patient experience through modern mobile technology.</p>
+    </section>
+
+    <section id="labs" style="background-color: #e9ecef;">
+        <h2>Laboratory Work</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Lab 1: UI Implementation</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/3Uj4tUIm7sw" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Lab 2: Interaction</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/lsb_FsAJKLY" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Lab 3: Material Design</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/PJ8Aa63zKd8" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Lab 4: Navigation</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/5u67eHHCQOU" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Lab 5: Room Database</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/DtH9NsoNtu8" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Major Projects</h2>
+        <div class="grid-container">
+            <div class="card">
+                <h3>Project 1</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/wx_nMGYp2CE" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="card">
+                <h3>Project 2</h3>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/wfMGTXcJRfk" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reflection" style="background-color: #e9ecef;">
+        <h2>Reflection & Learning Journey</h2>
+        <p>Throughout this Mobile Programming course, I have gained valuable experience in Android application development using Kotlin and Jetpack Compose. Starting from Lab 1, I learned how to design user interfaces and gradually explored user interactions, Material Design principles, navigation, and local data management. Each lab helped strengthen my understanding of modern Android development practices.</p>
+        <p>When completing Project 1 and Project 2, I combined the knowledge from previous labs into a complete healthcare application. I implemented multiple screens with smooth navigation, integrated network communication using Retrofit, utilized Android sensors to improve user experience, and connected Firebase for cloud data synchronization. These practical tasks enhanced my problem-solving skills and confidence in developing real-world mobile applications.</p>
+        <p>Overall, this learning journey has significantly improved my programming ability and understanding of mobile software engineering. It has also inspired me to continue learning advanced Android technologies and build more intelligent, user-friendly applications in the future.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Tech Stack</h2>
+        <p>Kotlin, Jetpack Compose, Android Studio, Material Design 3, Navigation Compose, Retrofit, Firebase Firestore, Android Sensors (Light Sensor), SharedPreferences, REST API Integration, Git & GitHub</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 FENG BODA - A206721</p>
+    </footer>
+</body>
+</html>
